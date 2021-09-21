@@ -57,22 +57,39 @@
   border-radius: 25px;
 }
 
+.header-logo-mobile{
+  display: none;
+}
+
 
 @media(max-width: 900px){
   .nav{
     display: none;
   }
+}
 
-  .header-title-web{
+@media(max-width: 700px){
+  .header-logo-mobile{
+    display: block;
+  }
+
+  .header-logo-web{
     display: none;
   }
 
-  .header-title-mobile{
-    display: block;
+  .header-container h1 {
+    font-size: 35px;
   }
-/* 
+
+  
   .profile{
     flex: 0;
-  } */
+    padding-left: 10px;
+  }
+
+  .header-container{
+    justify-content: space-between;
+  }
 
 }
+
