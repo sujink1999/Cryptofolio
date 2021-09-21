@@ -36,7 +36,6 @@
     }
 
     .empty-state{
-        margin-top: calc(50% - 30px);
-        transform: translateY(-50%);
+        transform: translateY(-30px);
     }
   }
