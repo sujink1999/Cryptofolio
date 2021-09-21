@@ -83,7 +83,7 @@ export default function Popup({coinData, onPopupUpdateClick, open, onClose}) {
     <input type="number" value={quantity} onChange={e => setQuantity(e.target.value)}></input>
     </div>
     <button className="popup-button" onClick={() => {
-        setInvestedValue(0)
+        setInvestedValue(null)
         setQuantity(0)
         const {id, name, symbol} = coinData
         onPopupUpdateClick(id, investedValue, quantity, symbol, name)}}>
