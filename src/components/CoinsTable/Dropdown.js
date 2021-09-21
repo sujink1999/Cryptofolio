@@ -1,8 +1,10 @@
 import { Collapse } from '@mui/material';
 import TableRow from '@mui/material/TableRow';
+
 import { StyledTableCell } from './TableCellStyles';
 import {ReactComponent as Cart} from './../../assets/images/cart.svg'
 import { ReactComponent as Update } from './../../assets/images/update.svg'
+
 import './CoinsTable.css'
 
 export default function Dropdown({open, onUpdateClick, onPurchaseClick, symbol}) {

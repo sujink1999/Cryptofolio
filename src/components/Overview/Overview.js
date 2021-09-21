@@ -1,7 +1,9 @@
 import { useState } from 'react'
+
 import { numberWithCommas } from '../../utils/functions'
 import ReturnsText from '../ReturnsText/ReturnsText'
 import { ReactComponent as CoinBag } from './../../assets/images/coin-bag.svg'
+
 import './Overview.css'
 
 export default function Overview({ data }) {

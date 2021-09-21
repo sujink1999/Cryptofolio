@@ -1,5 +1,6 @@
-import './Search.css'
 import {ReactComponent as SearchIcon} from './../../assets/images/search.svg'
+
+import './Search.css'
 
 export default function Search({ text, setText, inputRef }) {
     return (

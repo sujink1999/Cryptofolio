@@ -1,8 +1,9 @@
-import './BottomNav.css'
-
 import { NavLink } from 'react-router-dom'
+
 import { ReactComponent as Wallet } from './../../assets/images/wallet.svg'
 import { ReactComponent as Update } from './../../assets/images/update.svg'
+
+import './BottomNav.css'
 
 export default function Header() {
     return (

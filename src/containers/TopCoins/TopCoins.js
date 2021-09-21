@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from "react";
-import CoinsTable from "../../components/CoinsTable/CoinsTable";
-import Search from "../../components/Search/Search";
-import { useCoins } from "../../store";
 import Fuse from "fuse.js";
 
+import CoinsTable from "../../components/CoinsTable/CoinsTable";
+import Search from "../../components/Search/Search";
 import Animation from '../../components/Animation/Animation'
-
 import Popup from '../../components/Popup/Popup'
+
+import { useCoins } from "../../store";
 
 const filterCoins = (text, allCoins) => {
     if (text !== "") {

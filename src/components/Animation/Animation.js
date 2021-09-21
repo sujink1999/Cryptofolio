@@ -1,8 +1,8 @@
 import React from "react";
 import Lottie from "lottie-react";
+
 import Astronaut from '../../assets/lottie/astronaut.json'
 import Loader from '../../assets/lottie/loader.json'
-
 
 import './Animation.css'
 

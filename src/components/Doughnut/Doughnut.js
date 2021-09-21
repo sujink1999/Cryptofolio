@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react"
+
 import { PieChart } from "react-minimal-pie-chart"
 import { getImage } from "../../utils/functions";
+
 import './Doughnut.css'
 
 export default function Doughnut({data, unselect, select}) {

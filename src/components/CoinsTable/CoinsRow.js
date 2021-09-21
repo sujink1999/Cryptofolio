@@ -1,12 +1,13 @@
 import React from 'react';
+
+import { StyledTableCell, StyledTableRow, SelectedTableCellTopLeft, SelectedTableCell, SelectedTableCellTopRight, SelectedTableCellWeb, StyledTableCellWeb } from './TableCellStyles';
+import CoinName from './CoinName';
 import ReturnsText from '../ReturnsText/ReturnsText';
-import './CoinsTable.css'
 import Dropdown from './Dropdown';
 import Rank from './Rank';
-import { StyledTableCell, StyledTableRow, SelectedTableCellTopLeft, SelectedTableCell, SelectedTableCellTopRight, SelectedTableCellWeb, StyledTableCellWeb } from './TableCellStyles';
-
 import { numberWithCommas, getImage } from '../../utils/functions';
-import CoinName from './CoinName';
+
+import './CoinsTable.css'
 
 export default function CoinsRow({data, update}) {
     const {id, rank, name, price, circulatingSupply, oneDayChange, sevenDayChange, symbol} = data

@@ -1,9 +1,11 @@
 import {useEffect, useRef, useState} from 'react'
+
 import Doughnut from "../../components/Doughnut/Doughnut";
 import Animation from '../../components/Animation/Animation';
 import Overview from "../../components/Overview/Overview";
 import UserCoinCard from "../../components/UserCoinCard/UserCoinCard";
 import { useCoins } from "../../store";
+
 import './UserHoldings.css'
 
 const colors = ['#003f5c' ,'#58508d', '#8FD6E1', '#bc5090', '#ff6361', '#ffa600', '#1597BB', '#444444', '#726A95']

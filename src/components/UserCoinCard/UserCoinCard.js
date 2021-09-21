@@ -1,9 +1,11 @@
-import './UserCoinCard.css'
+import React from 'react'
+
 import {ReactComponent as Profit} from './../../assets/images/profit.svg'
 import {ReactComponent as Loss} from './../../assets/images/loss.svg'
 import ReturnsText from '../ReturnsText/ReturnsText'
 import { getImage, numberWithCommas } from '../../utils/functions'
-import React from 'react'
+
+import './UserCoinCard.css'
 
 const UserCoinCard = React.forwardRef(({ data }, ref) => {
     const { id, symbol, currentPrice, buyPrice, quantity, name} = data

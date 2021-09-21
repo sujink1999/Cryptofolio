@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import './Popup.css'
-
 import { styled} from '@mui/system';
 import ModalUnstyled from '@mui/core/ModalUnstyled';
+
+import './Popup.css'
 
 const StyledModal = styled(ModalUnstyled)`
   position: fixed;

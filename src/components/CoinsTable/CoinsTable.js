@@ -4,10 +4,13 @@ import TableBody from '@mui/material/TableBody';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
-import './CoinsTable.css'
-import CoinsRow from './CoinsRow';
 
 import {StyledTableCell, StyledTableCellWeb} from './TableCellStyles'
+import CoinsRow from './CoinsRow';
+
+import './CoinsTable.css'
+
+
 
 export default function CoinsTable({data, update}) {
     return (      
