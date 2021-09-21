@@ -8,7 +8,7 @@ import { useCoins } from "../../store";
 
 import './UserHoldings.css'
 
-const colors = ['#003f5c' ,'#58508d', '#8FD6E1', '#bc5090', '#ff6361', '#ffa600', '#1597BB', '#444444', '#726A95']
+const colors = ['#003f5c' ,'#58508d', '#bc5090', '#ff6361', '#ffa600', '#1597BB', '#444444', '#726A95']
 
 export default function UserHoldings() {
 
@@ -17,7 +17,6 @@ export default function UserHoldings() {
     const { data: serverData, isLoading } = useCoins()
 
     useEffect(()=>{
-        console.log("serverdata", isLoading, serverData)
     }, [isLoading, serverData])
 
     useEffect(() => {
@@ -33,7 +32,7 @@ export default function UserHoldings() {
                 const {id} = coin
                 return {
                     ...coin,
-                    color: colors[index % 5],
+                    color: colors[index % 8],
                     currentPrice : currentValueHash[id]
                 }
             })

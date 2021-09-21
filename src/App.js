@@ -1,10 +1,10 @@
 
-// import {useCoins} from './store'
-import './App.css';
 import BottomNav from './components/BottomNav/BottomNav'
 
+import './App.css';
+
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";
@@ -22,7 +22,7 @@ function App() {
       <Router>
         <Header/>
         <Switch>
-          <Route path="/list" component={TopCoins} />
+          <Route exact path="/list" component={TopCoins} />
           <Route exact path="/" component={UserHoldings} />
         </Switch>
         <BottomNav/>

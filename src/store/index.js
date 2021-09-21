@@ -2,14 +2,9 @@ import { useQuery } from "react-query"
 const axios = require('axios');
 
 const fetchCoins = async () => {
-    
-    let { data } = await axios.get("https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?limit=100&start=1&convert=inr", {
-        headers: { 
-            'X-CMC_PRO_API_KEY': 'ad6632c1-9491-4b97-b235-8b51784e53e7',
-        },
-        responseType: "json",
-    })
 
+    let serverData = await axios.get("https://crypto-folio-server.herokuapp.com/top-coins")
+    let { data } = serverData || {}
     let coins = []
     if (data && data.data) {
         coins = data.data

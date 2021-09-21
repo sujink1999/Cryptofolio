@@ -29,22 +29,36 @@ const Backdrop = styled('div')`
 `;
 
 export default function Popup({coinData, onPopupUpdateClick, open, onClose}) {
+
+    const [investedValue, setInvestedValue] = useState(null)
+    const [quantity, setQuantity] = useState(0)
+    const [currentPrice, setCurrentPrice] = useState(null)
+
     useEffect(() => {
         const localData = JSON.parse(localStorage.getItem("data"))
-        if (localData && coinData){
-            const currentCoin = localData.find(coin => {
-                return coin.id === coinData.id
-            })
-            if (currentCoin){
-                const {buyPrice, quantity} = currentCoin
-                setInvestedValue(Number((buyPrice * quantity).toFixed(2)))
-                setQuantity(quantity)
+        if(coinData){
+            if (localData){
+                const currentCoin = localData.find(coin => {
+                    return coin.id === coinData.id
+                })
+                if (currentCoin){
+                    const {buyPrice, quantity} = currentCoin
+                    setInvestedValue(Number((buyPrice * quantity).toFixed(2)))
+                    setQuantity(quantity)
+                }
             }
+            const {price} = coinData
+            setCurrentPrice(price)
         }
+        
     }, [coinData])
 
-    const [investedValue, setInvestedValue] = useState(0)
-    const [quantity, setQuantity] = useState(0)
+    useEffect(() => {
+        console.log(investedValue, currentPrice)
+        if(investedValue && currentPrice){
+            setQuantity(Number((investedValue / currentPrice).toFixed(8)))
+        }
+    }, [investedValue, currentPrice])
 
     return <StyledModal
     disableAutoFocus
@@ -61,7 +75,7 @@ export default function Popup({coinData, onPopupUpdateClick, open, onClose}) {
     <p>Invested Value</p>
     <div className="popup-input">
     <h1 className="popup-padding">₹</h1>
-    <input type="number" value={investedValue} onChange={e => setInvestedValue(e.target.value)}></input>
+    <input type="number" autoFocus={true} value={investedValue} onChange={e => setInvestedValue(e.target.value)}></input>
     </div>
     <p>Quantity of ETH</p>
     <div className="popup-input">

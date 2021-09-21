@@ -12,10 +12,8 @@ export default function Search({ text, setText, inputRef }) {
             placeholder="search your coin..."
             value={text}
             onChange={(e) => {
-              console.log(e);
               setText(e.target.value);
             }}
-            autoFocus={true}
             />
             <SearchIcon/>
         </div>

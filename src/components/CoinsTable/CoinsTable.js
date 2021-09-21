@@ -14,7 +14,16 @@ import './CoinsTable.css'
 
 export default function CoinsTable({data, update}) {
     return (      
-    <TableContainer>
+    <TableContainer 
+    // style={{backgroundColor :'#212325', 
+    //   borderRadius: '30px',
+    //   padding: '0px 20px 20px 20px', 
+    //   whiteSpace:'nowrap',
+    //   '@media (max-width: 900px)': {
+    //     paddingBottom: '60px',
+    //   },
+    // }}
+      >
       <Table stickyHeader>
         <TableHead >
           <TableRow >

@@ -61,14 +61,15 @@
   border-radius: 10px;
 }
 
-.css-rorn0c-MuiTableContainer-root{background-color : #212325; 
+.MuiTableContainer-root{
+  background-color : #212325; 
   border-radius: 30px;
   padding: 0px 20px 20px 20px; 
   white-space:nowrap
 }
 
 @media(max-width : 900px){
-  .css-rorn0c-MuiTableContainer-root{
+  .MuiTableContainer-root{
     padding-bottom: 60px;
   }
 }

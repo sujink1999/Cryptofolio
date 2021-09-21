@@ -8,6 +8,7 @@
   padding: 10px 20px 10px 40px;
   text-decoration: none;
   margin: 20px auto;
+  min-width: 320px;
   max-width: 500px;
 }
 

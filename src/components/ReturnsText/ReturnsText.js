@@ -27,7 +27,6 @@ export default function ReturnsText({ value, includeSign = false, percent=false,
         if (inr) {
             text='₹ '+text
         }
-        console.log(value, text, includeSign, percent, inr, addCommas)
         return text
     }
     return <p style={{
