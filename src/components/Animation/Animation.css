@@ -7,7 +7,7 @@
     font-family: Avenir Next;
     text-align: center;
     width: 80%;
-    margin: 20px auto;
+    margin: 20px auto 0 auto;
     color: #BCBDBF;
     font-size: 18px;
   }
@@ -33,5 +33,10 @@
     .empty-state .loader{
         width: 80%;
     
+    }
+
+    .empty-state{
+        margin-top: calc(50% - 30px);
+        transform: translateY(-50%);
     }
   }
