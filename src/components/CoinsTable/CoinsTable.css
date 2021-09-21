@@ -1,0 +1,76 @@
+.MuiTableContainer-root::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+.MuiTableContainer-root::-webkit-scrollbar {
+  display: none;
+}
+
+.add-coin {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  background-color: #161718;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  justify-content: center;
+}
+
+.buy,
+.update {
+  display: flex;
+  font-size: 16px;
+  color: white;
+  font-family: Avenir Next;
+  padding: 10px 20px;
+  border: 1px solid #6f5eed;
+  border-radius: 20px;
+  gap: 10px;
+  align-items: center;
+}
+
+.buy:hover,
+.update:hover {
+  cursor: pointer;
+  background-color: #6f5eed;
+}
+
+.rank-container {
+  display: flex;
+  justify-content: center;
+}
+
+.rank {
+  font-size: 14px;
+  width: 35px;
+  height: 35px;
+  background-color: #6f5eed;
+  border-radius: 18px;
+  padding-top: 7px;
+}
+
+.coin-name {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.coin-name img {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+}
+
+.css-rorn0c-MuiTableContainer-root{background-color : #212325; 
+  border-radius: 30px;
+  padding: 0px 20px 20px 20px; 
+  white-space:nowrap
+}
+
+@media(max-width : 900px){
+  .css-rorn0c-MuiTableContainer-root{
+    padding-bottom: 60px;
+  }
+}
+
+

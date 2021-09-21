@@ -1,0 +1,72 @@
+.popup-container{
+    background-color: #212325;
+  /* background: 'rgba( 88, 81, 81, 0.15 )',  */
+font-family: Avenir Next;
+color: white;
+display: flex;
+align-items: center;
+flex-direction: column;
+text-align: center;
+/* backdrop-filter: blur( 9px ); */
+border-radius: 20px;
+/* border: 1px solid rgba( 255, 255, 255, 0.01 ), */
+padding: 20px 20px;
+}
+
+.popup-header{
+    display: flex;
+}
+
+
+
+.popup-container p{
+  font-size: 15px;
+  margin: 20px;
+}
+
+.popup-container h1{
+  font-weight: 100;
+  color: #858383;
+  flex: 1;
+  text-align: right;
+}
+
+.popup-container input{
+  color: #858383;
+  font-size: 25px;
+  width: 50%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.popup-input{
+  display: flex;
+
+}
+
+.popup-button{
+  border: 0;
+  background-color: #6F5EED;
+  letter-spacing: 0.05em;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
+
+.popup-button:hover{
+  cursor: pointer;
+}
+
+.popup-header p{
+  display: flex;
+  font-size: 18px;
+  font-weight: 200;
+  margin: 0;
+}
+
+.popup-header span{
+  color: #69CC8E;
+  font-weight: 800;
+  margin-left: 5px;
+}

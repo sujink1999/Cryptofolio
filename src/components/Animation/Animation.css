@@ -1,0 +1,37 @@
+.empty-state{
+    width: 80%;
+    margin: auto;
+}
+
+.empty-state p {
+    font-family: Avenir Next;
+    text-align: center;
+    width: 80%;
+    margin: 20px auto;
+    color: #BCBDBF;
+    font-size: 18px;
+  }
+
+.empty-state .astronaut{
+    width: 60%;
+    margin: auto;
+
+}
+
+.empty-state .loader{
+    width: 40%;
+    margin: auto;
+
+}
+
+  @media(max-width: 900px){
+    .empty-state .astronaut{
+        width: 100%;
+    
+    }
+
+    .empty-state .loader{
+        width: 80%;
+    
+    }
+  }

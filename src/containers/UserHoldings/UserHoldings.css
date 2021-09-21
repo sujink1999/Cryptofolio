@@ -1,0 +1,47 @@
+.user-holdings-container {
+  width: 85%;
+  display: flex;
+  margin: 0px auto;
+  height: 340px;
+  padding: 20px 0;
+  justify-content: center;
+  flex: 1;
+}
+
+.user-coins {
+  margin-left: 10%;
+  max-width: 520px;
+  flex: 1;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-coins::-webkit-scrollbar {
+  width: 6px;
+}
+
+.user-coins::-webkit-scrollbar-thumb {
+  background: #212325;
+  border-radius: 10px;
+}
+
+
+@media(max-width: 900px){
+  .user-holdings-container {
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    padding-top: 10px;
+
+  }
+
+  .user-coins {
+    margin: 0;
+    width: 95%;
+    padding-bottom: 70px;
+  }
+}

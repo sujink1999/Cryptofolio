@@ -1,0 +1,16 @@
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  background: #212325;
+  color: #adadb5;
+  width: 60%;
+  border-radius: 25px;
+  padding: 10px 20px 10px 40px;
+  text-decoration: none;
+  margin: 20px auto;
+  max-width: 500px;
+}
+
+.search-container input {
+  font-size: 18px;
+}
