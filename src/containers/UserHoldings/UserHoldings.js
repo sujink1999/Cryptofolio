@@ -21,7 +21,7 @@ export default function UserHoldings() {
 
     useEffect(() => {
         const localData = JSON.parse(localStorage.getItem("data"))
-        if (localData && serverData) {
+        if (localData && localData.length > 0 && serverData) {
             const currentValueHash = {}
             serverData.forEach(coin => {
                 const {id, price } = coin

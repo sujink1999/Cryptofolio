@@ -54,7 +54,6 @@ export default function Popup({coinData, onPopupUpdateClick, open, onClose}) {
     }, [coinData])
 
     useEffect(() => {
-        console.log(investedValue, currentPrice)
         if(investedValue && currentPrice){
             setQuantity(investedValue / currentPrice)
         }
@@ -83,10 +82,11 @@ export default function Popup({coinData, onPopupUpdateClick, open, onClose}) {
     <input type="number" value={quantity} onChange={e => setQuantity(e.target.value)}></input>
     </div>
     <button className="popup-button" onClick={() => {
+        const {id, name, symbol} = coinData
+        onPopupUpdateClick(id, investedValue, quantity, symbol, name)
         setInvestedValue(null)
         setQuantity(0)
-        const {id, name, symbol} = coinData
-        onPopupUpdateClick(id, investedValue, quantity, symbol, name)}}>
+        }}>
         Update
     </button>
 </div>
