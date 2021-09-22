@@ -56,7 +56,7 @@ export default function Popup({coinData, onPopupUpdateClick, open, onClose}) {
     useEffect(() => {
         console.log(investedValue, currentPrice)
         if(investedValue && currentPrice){
-            setQuantity(Number((investedValue / currentPrice).toFixed(8)))
+            setQuantity(investedValue / currentPrice)
         }
     }, [investedValue, currentPrice])
 

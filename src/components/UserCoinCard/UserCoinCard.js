@@ -18,7 +18,7 @@ const UserCoinCard = React.forwardRef(({ data }, ref) => {
 
             <div className="ucc-1">
                 <h3>{name}</h3>
-                <p>{`${quantity}${symbol}`}</p>
+                <p>{`${quantity.toFixed(8)}${symbol}`}</p>
             </div>
             <div className="ucc-2">
                 <div>
