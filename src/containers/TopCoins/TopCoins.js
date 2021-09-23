@@ -57,7 +57,7 @@ export default function TopCoins() {
         return id !== coinId
       })
       if(quantity !== 0){
-        data = [...data, { id : coinId, buyPrice : investedValue / quantity, quantity, symbol, name }]
+        data = [...data, { id : coinId, buyPrice : investedValue / quantity, quantity : Number(quantity), symbol, name }]
       }
       localStorage.setItem("data", JSON.stringify(data))
       setUpdateCoinData(undefined)
