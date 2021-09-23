@@ -29,10 +29,9 @@ export default function UserHoldings() {
             })
 
             const coins = localData.map((coin, index) => {
-                const {id, quantity} = coin
+                const {id} = coin
                 return {
                     ...coin,
-                    quantity : Number(quantity),
                     color: colors[index % 8],
                     currentPrice : currentValueHash[id]
                 }
