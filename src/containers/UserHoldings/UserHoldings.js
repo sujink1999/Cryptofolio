@@ -16,9 +16,6 @@ export default function UserHoldings() {
     const userCoinCards = useRef({})
     const { data: serverData, isLoading } = useCoins()
 
-    useEffect(()=>{
-    }, [isLoading, serverData])
-
     useEffect(() => {
         const localData = JSON.parse(localStorage.getItem("data"))
         if (localData && localData.length > 0 && serverData) {
